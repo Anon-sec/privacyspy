@@ -1,0 +1,101 @@
+name = "Cloudflare"
+description = "Cloudflare is a U.S.-based company that provides internet security, performance, and reliability services, including content delivery networks (CDN), DDoS protection, and zero-trust networking solutions."
+slug = "cloudflare"
+hostnames = [ "cloudflare.com" ]
+sources = [ "https://www.cloudflare.com/privacypolicy/","https://www.cloudflare.com/candidate-privacy-notice/","https://www.cloudflare.com/cookie-policy/" ]
+contributors = [ "Anon-sec" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "These third-party cookies are placed by third-party advertising platforms or networks to collect information about your visits to and actions on certain pages of our Websites so that they can deliver ads for relevant Cloudflare products and services to you later, such as when you are on certain third-party sites.",
+  "You may opt out of Targeting cookies through the 'Cookie Preferences' (or, in the United States, the 'Your Privacy Choices' link) on cloudflare.com."
+]
+notes = ["Cloudflare uses these cookies for its own advertising purposes, it states that it does not sell, rent, or share personal information with third parties for their direct marketing purposes as defined under the California Shine the Light Act."]
+
+[rubric.data-breaches]
+value = "no"
+citations = [
+  ""
+]
+notes = [
+  "There is no section in the privacy policy that promises or describes user breach notification procedures."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+  "We use Personal Data to operate our business and provide the Services.” Section: What Information We Collect and Why We Collect It",
+  "We collect and store logs to ensure the security and reliability of our services.” Section: What Information We Collect and Why We Collect It",
+  "We may collect personal data to comply with applicable laws, regulations, and legal processes.” Section: What Information We Collect and Why We Collect It"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "You can request that we delete your Personal Data by contacting us at privacy@cloudflare.com.” Section: Your Rights Under the GDPR and Other Data Protection Laws"
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "This Privacy Policy was last modified on Aug 28, 2024.” At the top of the Privacy Policy"
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "We may disclose your Personal Data to law enforcement or other government authorities if required by law or in response to a subpoena or court order.” Section: Disclosure of Personal Data"
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "We collect Personal Data such as your name, email address, billing information, and other information you provide when using our services.” Section: What Information We Collect and Why We Collect It",
+  "We may also collect technical information such as your IP address, browser type, operating system, device type, and usage data when you use our Services.” Section: What Information We Collect and Why We Collect It"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "You may opt out of Targeting cookies through the 'Cookie Preferences' (or, in the United States, the 'Your Privacy Choices' link) on cloudflare.com.” Section: Cookie Preferences",
+  "Cloudflare uses cookies for purposes such as customizing content and ads, providing social media features, and analyzing traffic.” Section: What Are Cookies?"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "We may update this Privacy Policy from time to time. If we make significant changes, we will notify you through the Services or by other means.” Section: Changes to This Privacy Policy"
+]
+
+[rubric.security]
+value = "yes-independent-audits"
+citations = [
+  "Cloudflare’s technical and organizational measures are regularly tested and evaluated by external third-party auditors as part of Cloudflare’s Security & Privacy Compliance Program. These may include annual ISO/IEC 27001 audits; AICPA SOC 2 Type II; PCI DSS Level 1; and other external audits.” Source: Cloudflare Data Processing Addendum – Annex 2",
+  "We use administrative, physical, and technical safeguards to protect the personal data we collect. These safeguards include encryption of data in transit and at rest, access controls, and regular security reviews and monitoring.” Cloudflare Privacy Policy"
+]
+notes = [
+  "DPA: https://www.cloudflare.com/cloudflare-customer-dpa/",
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We do not sell, rent, or share personal information with third parties for their direct marketing purposes... We do permit third parties to collect personal information as described in our Privacy Policy for the business purposes described here.” Source: Cloudflare Cookie Policy",
+  "We do not allow our third-party service providers to use your personal data for their own purposes or to sell your personal data. We only permit them to process your personal data for specified purposes and in accordance with our instructions.” Source: Cloudflare Candidate Privacy Notice",
+  "Cloudflare shall not subcontract any of its processing operations performed on behalf of the Customer under the Clauses without the prior written consent of the Customer.” Source: Cloudflare Data Processing Addendum"
+]
+notes = [
+  "https://www.cloudflare.com/candidate-privacy-notice/",
+  "https://www.cloudflare.com/cookie-policy/",
+  "https://www.cloudflare.com/cloudflare-customer-dpa/"
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [
+  "We will use the above-described categories of personal data we collect about you to: Carry out background, identity verification, and reference checks as appropriate and in accordance with applicable law.” Source: Cloudflare Candidate Privacy Notice"
+]
+notes = [
+  "https://www.cloudflare.com/candidate-privacy-notice/",
+]
