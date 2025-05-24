@@ -1,101 +1,120 @@
 name = "Cloudflare"
 description = "Cloudflare is a U.S.-based company that provides internet security, performance, and reliability services, including content delivery networks (CDN), DDoS protection, and zero-trust networking solutions."
 slug = "cloudflare"
-hostnames = [ "cloudflare.com" ]
-sources = [ "https://www.cloudflare.com/privacypolicy/","https://www.cloudflare.com/candidate-privacy-notice/","https://www.cloudflare.com/cookie-policy/" ]
-contributors = [ "Anon-sec" ]
+hostnames = ["cloudflare.com"]
+sources = [
+  "https://www.cloudflare.com/privacypolicy/",
+  "https://www.cloudflare.com/candidate-privacy-notice/",
+  "https://www.cloudflare.com/cookie-policy/"
+]
+contributors = ["Anon-sec"]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
 citations = [
-  "These third-party cookies are placed by third-party advertising platforms or networks to collect information about your visits to and actions on certain pages of our Websites so that they can deliver ads for relevant Cloudflare products and services to you later, such as when you are on certain third-party sites.",
-  "You may opt out of Targeting cookies through the 'Cookie Preferences' (or, in the United States, the 'Your Privacy Choices' link) on cloudflare.com."
+  "You may opt out of Targeting cookies through the \"Cookie Preferences\" (or, in the United States, the “Your Privacy Choices” link) on cloudflare.com or through the links listed below.",
+  "If you wish to opt-out of cookies that collect information to serve you interest-based ads generally, you may opt-out by clicking \"https://thenai.org/opt-out/\" (or if located in the European Union or United Kingdom, click here \"https://youronlinechoices.eu/\")."
 ]
-notes = ["Cloudflare uses these cookies for its own advertising purposes, it states that it does not sell, rent, or share personal information with third parties for their direct marketing purposes as defined under the California Shine the Light Act."]
+notes = ["Refer to https://www.cloudflare.com/cookie-policy/ for more details"]
 
 [rubric.data-breaches]
-value = "no"
+value = "eventually"
 citations = [
-  ""
+  "We have put in place procedures to deal with any suspected data security breach and will notify you and any applicable regulator of a suspected breach where we are legally required to do so."
 ]
 notes = [
-  "There is no section in the privacy policy that promises or describes user breach notification procedures."
+  "Refer to https://www.cloudflare.com/candidate-privacy-notice/ for more details"
 ]
 
 [rubric.data-collection-reasoning]
 value = "mostly"
 citations = [
-  "We use Personal Data to operate our business and provide the Services.” Section: What Information We Collect and Why We Collect It",
-  "We collect and store logs to ensure the security and reliability of our services.” Section: What Information We Collect and Why We Collect It",
-  "We may collect personal data to comply with applicable laws, regulations, and legal processes.” Section: What Information We Collect and Why We Collect It"
+  "We may ask for and collect personal information such as your name, address, phone number and email address when you visit our offices, register for or attend a sponsored event or other events at which Cloudflare (and/or its representatives) participates, or participate in Cloudflare’s studies such as user experience research.",
+  "We ask for and—at your option—collect personal information from you when you submit web forms on our Websites, including opportunities to sign up for and agree to receive email communications from us.",
+  "Log files: Just as when you visit and interact with most websites and services delivered via the Internet, when you visit our Websites, including the Cloudflare Community Forum, we gather certain information and store it in log files. This information may include but is not limited to Internet Protocol (IP) addresses, system configuration information, URLs of referring pages, and locale and language preferences.",
+  "“Comply with legal obligations as well as to investigate and prevent fraudulent transactions, unauthorized access to the Services, and other illegal activities;”"
 ]
 
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "You can request that we delete your Personal Data by contacting us at privacy@cloudflare.com.” Section: Your Rights Under the GDPR and Other Data Protection Laws"
+  "You have the right to access, correct, update, port, or delete your personal information, and to restrict or object to the processing of your personal information (each of these a ‘Rights Request’). You may email us at sar@cloudflare.com with any Rights Request, and we will respond within thirty (30) days. Section 8: DATA SUBJECT RIGHTS AND CHOICES"
 ]
 
 [rubric.history]
 value = "last-modified"
 citations = [
-  "This Privacy Policy was last modified on Aug 28, 2024.” At the top of the Privacy Policy"
+  ""
+]
+notes = [
+  "Mentioned at the top of the Privacy Policy"
 ]
 
 [rubric.law-enforcement]
 value = "strict"
 citations = [
-  "We may disclose your Personal Data to law enforcement or other government authorities if required by law or in response to a subpoena or court order.” Section: Disclosure of Personal Data"
+  "When we are required to disclose personal information to respond to subpoenas, court orders, or legal process, or to establish or exercise our legal rights or defend against legal claims."
+]
+notes = [
+  "Section 5: Information Sharing"
 ]
 
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "We collect Personal Data such as your name, email address, billing information, and other information you provide when using our services.” Section: What Information We Collect and Why We Collect It",
-  "We may also collect technical information such as your IP address, browser type, operating system, device type, and usage data when you use our Services.” Section: What Information We Collect and Why We Collect It"
+  "Attendees: Name, address, phone number, email; voice and image recordings with consent.",
+  "Website Visitors: Contact info via forms, surveys, feedback; log data including IP addresses, system info, URLs, locale; cookies and tracking for marketing; public posts in forums.",
+  "Customers and Admin Users: Account info, payment info (limited storage), crash reports.",
+  "Public DNS Resolver Users: Limited DNS query data stored for 25 hours; different policy for 1.1.1.1 app.",
+  "End Users: IP addresses, traffic routing, system configs; data shared as 'Customer Logs' with customers.",
+  "Registrants: Contact info, domain data, WHOIS including IP of transfer initiator.",
+  "Network Data: Service metrics, request volumes, error rates, malware info, IP threat scores."
+]
+notes = [
+  "Generally is preferred over exhaustively because the policy clearly lists all main categories of personal data collected but uses example phrases ('may include' or 'such as,') that show the list may not include every specific type."
 ]
 
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  "You may opt out of Targeting cookies through the 'Cookie Preferences' (or, in the United States, the 'Your Privacy Choices' link) on cloudflare.com.” Section: Cookie Preferences",
-  "Cloudflare uses cookies for purposes such as customizing content and ads, providing social media features, and analyzing traffic.” Section: What Are Cookies?"
+  "You can request to opt out of such ‘sale’ or ‘sharing’ of your Personal Information using the ‘Your Privacy Choices’ link in the footer below.",
+  "In addition, some internet browsers offer the option to enable opt-out signals such as Global Privacy Control that lets you tell websites that you do not want to have your online activities tracked. Cloudflare responds to these signals by processing them as a request to opt out of the ‘sale’ or ‘sharing’ of your Personal Information as discussed above."
 ]
 
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  "We may update this Privacy Policy from time to time. If we make significant changes, we will notify you through the Services or by other means.” Section: Changes to This Privacy Policy"
+  "If we make changes to this Policy that we believe materially impact the privacy of your personal information, we will promptly provide notice of any such changes (and, where necessary, obtain consent), as well as post the updated Policy on this website noting the effective date of any changes."
+]
+notes = [
+  "Section 12: Notification of Changes"
 ]
 
 [rubric.security]
 value = "yes-independent-audits"
 citations = [
-  "Cloudflare’s technical and organizational measures are regularly tested and evaluated by external third-party auditors as part of Cloudflare’s Security & Privacy Compliance Program. These may include annual ISO/IEC 27001 audits; AICPA SOC 2 Type II; PCI DSS Level 1; and other external audits.” Source: Cloudflare Data Processing Addendum – Annex 2",
-  "We use administrative, physical, and technical safeguards to protect the personal data we collect. These safeguards include encryption of data in transit and at rest, access controls, and regular security reviews and monitoring.” Cloudflare Privacy Policy"
+  "Cloudflare’s technical and organizational measures are regularly tested and evaluated by external third-party auditors as part of Cloudflare’s Security & Privacy Compliance Program. These may include annual ISO/IEC 27001 audits; AICPA SOC 2 Type II; PCI DSS Level 1; and other external audits. Source: Cloudflare Data Processing Addendum – Annex 2",
+  "We use administrative, physical, and technical safeguards to protect the personal data we collect. These safeguards include encryption of data in transit and at rest, access controls, and regular security reviews and monitoring. Cloudflare Privacy Policy"
 ]
 notes = [
-  "DPA: https://www.cloudflare.com/cloudflare-customer-dpa/",
+  "DPA: https://www.cloudflare.com/cloudflare-customer-dpa/"
 ]
 
 [rubric.third-party-access]
-value = "yes-unspecified-critical"
+value = "yes-specified-noncritical"
 citations = [
-  "We do not sell, rent, or share personal information with third parties for their direct marketing purposes... We do permit third parties to collect personal information as described in our Privacy Policy for the business purposes described here.” Source: Cloudflare Cookie Policy",
-  "We do not allow our third-party service providers to use your personal data for their own purposes or to sell your personal data. We only permit them to process your personal data for specified purposes and in accordance with our instructions.” Source: Cloudflare Candidate Privacy Notice",
-  "Cloudflare shall not subcontract any of its processing operations performed on behalf of the Customer under the Clauses without the prior written consent of the Customer.” Source: Cloudflare Data Processing Addendum"
+  "Our marketing and advertising partners may collect or receive personal information about you and/or collect certain information about your interactions with our Websites, or your email communications with Cloudflare. We share this personal information for our business purposes.",
+  "In addition, we may also provide these marketing and advertising partners with your email address or other limited account information."
 ]
 notes = [
-  "https://www.cloudflare.com/candidate-privacy-notice/",
-  "https://www.cloudflare.com/cookie-policy/",
-  "https://www.cloudflare.com/cloudflare-customer-dpa/"
+  "Refer to Information Sharing Section on https://www.cloudflare.com/privacypolicy/ for more details"
 ]
 
 [rubric.third-party-collection]
 value = "critical-only"
 citations = [
-  "We will use the above-described categories of personal data we collect about you to: Carry out background, identity verification, and reference checks as appropriate and in accordance with applicable law.” Source: Cloudflare Candidate Privacy Notice"
+  "We work with other companies who provide services... These Service Providers process personal information only under our instructions and compliance with this Privacy Policy..."
 ]
 notes = [
-  "https://www.cloudflare.com/candidate-privacy-notice/",
+  "Section 5: Information Sharing"
 ]
